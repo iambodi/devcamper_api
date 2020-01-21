@@ -4,7 +4,7 @@ const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 
 const ReviewSchema = new mongoose.Schema({
-  name: {
+  title: {
     type: String,
     required: [true, 'Please add a title for the review'],
     maxlength: 100
